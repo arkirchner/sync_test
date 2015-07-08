@@ -1,0 +1,5 @@
+<% if @product.errors.empty? %>
+  $('#new_product').slideUp(350);
+<% else %>
+  $('#new_product').html("<%= j (render partial: 'form', locals: {product: @product}) %>");
+<% end %>

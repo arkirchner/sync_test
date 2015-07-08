@@ -1,0 +1,6 @@
+<% products.each do |product| %>
+  <%= sync partial: 'product', resource: product %>
+<% end %>
+<% new_product = Rroduct.new %>
+<% #= sync_new partial: 'role', resource: new_role# %>
+<%= sync_new partial: 'product', resource: new_product %>
